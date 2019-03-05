@@ -1,0 +1,10 @@
+formula:
+  energy: e=love3   
+cashier:
+  change: 3.14
+event:
+  tvshows: tv1, tv2
+tvshow:
+  name: Dexter
+  seasons: 5
+  rating: 11.5
