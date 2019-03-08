@@ -9,13 +9,13 @@ public class TvShowEventConfiguration {
     @Bean
     ApplicationRunner application(TvShowEvent event) {
         return args -> {
-            List<String> tvshows = event.getTvShows();
+            List<String> tvshows = event.getTvshows();
             System.out.println(tvshows);
         };
     }
 
     @Bean
-    ApplicationRunner application(DexterExpert expert) {
+    ApplicationRunner application2(DexterExpert expert) {
         return args -> {
             System.out.println(expert.getName());
             System.out.println(expert.getRating());

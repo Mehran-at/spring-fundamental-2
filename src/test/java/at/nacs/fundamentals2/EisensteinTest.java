@@ -6,13 +6,13 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
-class EisenstrinTest {
+class EisensteinTest {
     @Autowired
-    Eisenstrin eisenstrin;
+    Eisenstein eisenstein;
 
     @Test
     void getFormula() {
-        String aktual=eisenstrin.getFormula();
+        String aktual= eisenstein.getFormula();
         assertEquals("e=love3", aktual);
     }
 }

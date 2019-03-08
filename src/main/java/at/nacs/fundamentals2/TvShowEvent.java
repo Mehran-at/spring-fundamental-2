@@ -8,7 +8,8 @@ import java.util.List;
 
 @Component
 public class TvShowEvent {
+
     @Getter
-    @Value(" ${event.tvshows}")
-    private List<String> tvShows;
+    @Value("${event.tvshows}")
+    private List<String> tvshows;
 }

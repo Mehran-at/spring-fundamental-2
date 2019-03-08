@@ -8,3 +8,19 @@ tvshow:
   name: Dexter
   seasons: 5
   rating: 11.5
+
+things:
+  bottles:
+    - color: red
+      capacity: 500
+    - color: yellow
+      capacity: 700
+
+schedule:
+  weekly:
+    monday: Laundry
+    tuesday: Learn programming
+  daily:
+    10: wake up
+    11: have brunch with friends
+    12: eat hummus, drink tea

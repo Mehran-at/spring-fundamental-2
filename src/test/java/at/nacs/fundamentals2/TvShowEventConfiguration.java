@@ -1,11 +1,9 @@
 package at.nacs.fundamentals2;
 
-import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
-import java.beans.BeanProperty;
 import java.util.List;
 
 @Component
@@ -13,7 +11,7 @@ public class TvShowEventConfiguration {
     @Bean
     ApplicationRunner application(TvShowEvent event) {
         return args -> {
-            List<String> tvShows = event.getTvShows();
+            List<String> tvShows = event.getTvshows();
             System.out.println(tvShows);
         };
     }

@@ -4,10 +4,8 @@ import lombok.Getter;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-import java.util.Map;
-
 @Component
-public class Eisenstrin {
+public class Eisenstein {
     @Getter
     @Value("${formula.energy}")
     private String formula;

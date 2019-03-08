@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
-import org.junit.runners.Parameterized;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -18,13 +17,13 @@ class TvShowEventTest {
     TvShowEvent event;
     @Test
     void getTvShows() {
-        List<String> expected = event.getTvShows();
+        List<String> expected = event.getTvshows();
         Assertions.assertEquals(2, expected.size());
     }
     @ParameterizedTest
     @ValueSource(strings = {"tv1", "tv2"})
     void testIndividualTvShows(String title) {
-        List<String> actual = event.getTvShows();
+        List<String> actual = event.getTvshows();
         assertTrue(actual.contains(title));
     }
 }
